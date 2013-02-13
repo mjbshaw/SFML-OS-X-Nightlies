@@ -101,3 +101,5 @@ tar -cjf "${dir}.tar.bz2" "$dir"
 cp "${dir}.tar.bz2" ../bin
 
 cd ..
+
+rm -rf "$dir"

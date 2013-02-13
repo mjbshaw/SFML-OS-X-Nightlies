@@ -27,6 +27,9 @@ cd bin
 rm -rf *
 cd ..
 
+git checkout bin
+git reset HEAD~1
+
 # Folder naming scheme example:
 # sfml_osx_10.7base_for_g++_and_c++03_deploys_to_10.5
 
@@ -84,3 +87,11 @@ export base='10.7'
 export deploy='10.5'
 export extra_flags=
 ./single_build.sh
+
+d=`date "+%Y-%m-%d"`
+rev=`git rev-parse --short HEAD`
+git add -u
+git commit -m "Add builds from $d and SFML $rev"
+git push
+
+git checkout master
