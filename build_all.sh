@@ -96,6 +96,6 @@ export extra_flags=
 d=`date "+%Y-%m-%d"`
 git add bin
 git commit -m "Add builds from $d and SFML $rev"
-git push
+git push -f
 
 git checkout master
