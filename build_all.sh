@@ -19,7 +19,11 @@ cd SFML
 
 git fetch
 git rebase
+rev=`git rev-parse --short HEAD`
 cd ..
+
+git add SFML
+git commit -m "Update SFML to $rev"
 
 export sfml_src_dir="`pwd`/SFML"
 
@@ -89,7 +93,6 @@ export extra_flags=
 ./single_build.sh
 
 d=`date "+%Y-%m-%d"`
-rev=`git rev-parse --short HEAD`
 git add -u
 git commit -m "Add builds from $d and SFML $rev"
 git push
