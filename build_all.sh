@@ -33,6 +33,7 @@ cd ..
 
 git checkout bin
 git reset HEAD~1
+git rebase master
 
 # Folder naming scheme example:
 # sfml_osx_10.7base_for_g++_and_c++03_deploys_to_10.5
