@@ -18,7 +18,7 @@
 cd SFML
 
 git fetch
-git rebase
+git rebase origin/master
 rev=`git rev-parse --short HEAD`
 cd ..
 
