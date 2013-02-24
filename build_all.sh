@@ -19,7 +19,7 @@ cd SFML
 
 git fetch
 git rebase origin/master
-export sfml_rev='g++'`git rev-parse --short HEAD`
+export sfml_rev=`git rev-parse --short HEAD`
 cd ..
 
 git add SFML
