@@ -94,7 +94,7 @@ make -j8
 ditto "lib" "$install_dir/dylibs/root/usr/local/lib/"
 ditto "$sfml_src_dir/include/SFML" "$install_dir/dylibs/root/usr/local/include/SFML"
 
-echo These binaries were build on `date "+%Y-%m-%d"` from SFML $sfml_rev > "$dir/version.txt"
+echo These binaries were build on `date "+%Y-%m-%d"` from SFML $sfml_rev > "$install_dir/version.txt"
 
 cd ..
 
