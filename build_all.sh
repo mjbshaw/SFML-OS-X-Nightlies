@@ -97,3 +97,4 @@ git commit -m "Add builds from $d and SFML $sfml_rev"
 git push -f
 
 git checkout master
+git push
