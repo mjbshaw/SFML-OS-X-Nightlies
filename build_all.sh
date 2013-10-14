@@ -41,6 +41,8 @@ export cpp_ver='c++11'
 export base='10.8'
 export deploy='10.7'
 export extra_flags='-DCMAKE_CXX_FLAGS=-stdlib=libc++ -DCMAKE_C_FLAGS=-stdlib=libc++'
+export cxx_opt_flags=
+export c_opt_flags=
 export extra_name=
 ./single_build.sh
 
@@ -50,6 +52,8 @@ export cpp_ver='c++11'
 export base='10.9'
 export deploy='10.7'
 export extra_flags='-DCMAKE_CXX_FLAGS=-stdlib=libc++ -DCMAKE_C_FLAGS=-stdlib=libc++'
+export cxx_opt_flags=
+export c_opt_flags=
 export extra_name=
 ./single_build.sh
 
@@ -59,6 +63,8 @@ export cpp_ver='c++03'
 export base='10.8'
 export deploy='10.7'
 export extra_flags='-DCMAKE_CXX_FLAGS=-stdlib=libstdc++ -DCMAKE_C_FLAGS=-stdlib=libstdc++'
+export cxx_opt_flags=
+export c_opt_flags=
 export extra_name=
 ./single_build.sh
 
@@ -68,6 +74,8 @@ export cpp_ver='c++03'
 export base='10.9'
 export deploy='10.7'
 export extra_flags='-DCMAKE_CXX_FLAGS=-stdlib=libstdc++ -DCMAKE_C_FLAGS=-stdlib=libstdc++'
+export cxx_opt_flags=
+export c_opt_flags=
 export extra_name=
 ./single_build.sh
 
@@ -77,7 +85,9 @@ export c_cmp='clang'
 export cpp_ver='c++11'
 export base='10.8'
 export deploy='10.7'
-export extra_flags='-DCMAKE_CXX_FLAGS=-stdlib=libc++ -DCMAKE_C_FLAGS=-stdlib=libc++ -DCMAKE_CXX_FLAGS_RELEASE="-Ofast -flto -DNDEBUG" -DCMAKE_C_FLAGS_RELEASE="-Ofast -flto -DNDEBUG"'
+export extra_flags='-DCMAKE_CXX_FLAGS=-stdlib=libc++ -DCMAKE_C_FLAGS=-stdlib=libc++'
+export cxx_opt_flags='-DCMAKE_CXX_FLAGS_RELEASE=-Ofast -flto -DNDEBUG'
+export c_opt_flags='-DCMAKE_C_FLAGS_RELEASE=-Ofast -flto -DNDEBUG'
 export extra_name="_Ofast_and_flto"
 ./single_build.sh
 
@@ -86,7 +96,9 @@ export c_cmp='clang'
 export cpp_ver='c++11'
 export base='10.9'
 export deploy='10.7'
-export extra_flags='-DCMAKE_CXX_FLAGS=-stdlib=libc++ -DCMAKE_C_FLAGS=-stdlib=libc++ -DCMAKE_CXX_FLAGS_RELEASE="-Ofast -flto -DNDEBUG" -DCMAKE_C_FLAGS_RELEASE="-Ofast -flto -DNDEBUG"'
+export extra_flags='-DCMAKE_CXX_FLAGS=-stdlib=libc++ -DCMAKE_C_FLAGS=-stdlib=libc++'
+export cxx_opt_flags='-DCMAKE_CXX_FLAGS_RELEASE=-Ofast -flto -DNDEBUG'
+export c_opt_flags='-DCMAKE_C_FLAGS_RELEASE=-Ofast -flto -DNDEBUG'
 export extra_name="_Ofast_and_flto"
 ./single_build.sh
 
@@ -95,7 +107,9 @@ export c_cmp='clang'
 export cpp_ver='c++03'
 export base='10.8'
 export deploy='10.7'
-export extra_flags='-DCMAKE_CXX_FLAGS=-stdlib=libstdc++ -DCMAKE_C_FLAGS=-stdlib=libstdc++ -DCMAKE_CXX_FLAGS_RELEASE="-Ofast -flto -DNDEBUG" -DCMAKE_C_FLAGS_RELEASE="-Ofast -flto -DNDEBUG"'
+export extra_flags='-DCMAKE_CXX_FLAGS=-stdlib=libstdc++ -DCMAKE_C_FLAGS=-stdlib=libstdc++'
+export cxx_opt_flags='-DCMAKE_CXX_FLAGS_RELEASE=-Ofast -flto -DNDEBUG'
+export c_opt_flags='-DCMAKE_C_FLAGS_RELEASE=-Ofast -flto -DNDEBUG'
 export extra_name="_Ofast_and_flto"
 ./single_build.sh
 
@@ -104,7 +118,9 @@ export c_cmp='clang'
 export cpp_ver='c++03'
 export base='10.9'
 export deploy='10.7'
-export extra_flags='-DCMAKE_CXX_FLAGS=-stdlib=libstdc++ -DCMAKE_C_FLAGS=-stdlib=libstdc++ -DCMAKE_CXX_FLAGS_RELEASE="-Ofast -flto -DNDEBUG" -DCMAKE_C_FLAGS_RELEASE="-Ofast -flto -DNDEBUG"'
+export extra_flags='-DCMAKE_CXX_FLAGS=-stdlib=libstdc++ -DCMAKE_C_FLAGS=-stdlib=libstdc++'
+export cxx_opt_flags='-DCMAKE_CXX_FLAGS_RELEASE=-Ofast -flto -DNDEBUG'
+export c_opt_flags='-DCMAKE_C_FLAGS_RELEASE=-Ofast -flto -DNDEBUG'
 export extra_name="_Ofast_and_flto"
 ./single_build.sh
 

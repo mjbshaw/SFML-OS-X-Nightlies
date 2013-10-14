@@ -9,7 +9,7 @@ install_dir="`pwd`/$dir"
 
 mkdir frameworks
 cd frameworks
-
+echo $extra_flags
 # Build as frameworks
 cmake -G "Unix Makefiles" \
       -DCMAKE_OSX_ARCHITECTURES='i386;x86_64' \
@@ -27,6 +27,8 @@ cmake -G "Unix Makefiles" \
       -DSFML_BUILD_DOC="ON" \
       -DSFML_BUILD_EXAMPLES="ON" \
       $extra_flags \
+      "$cxx_opt_flags" \
+      "$c_opt_flags" \
       "$sfml_src_dir"
 
 make -j8
@@ -123,6 +125,8 @@ cmake -G "Unix Makefiles" \
       -DOPENGL_gl_LIBRARY="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX${base}.sdk/System/Library/Frameworks/OpenGL.framework" \
       -DOPENGL_glu_LIBRARY="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX${base}.sdk/System/Library/Frameworks/AGL.framework" \
       $extra_flags \
+      "$cxx_opt_flags" \
+      "$c_opt_flags" \
       "$sfml_src_dir"
 
 make -j8
